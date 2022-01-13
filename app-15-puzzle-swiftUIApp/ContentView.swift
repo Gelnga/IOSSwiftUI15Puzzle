@@ -15,9 +15,12 @@ struct ContentView: View {
     
     @State var gameBoard: [[String]]
     @State var moves: Int
+    @Environment(\.managedObjectContext) var context: NSManagedObjectContext
     @Binding var isWin: Bool
 //    @State var time = 0
 //    var timer: NestedTimer!
+    
+    var gameDataRepository: GameDataRepository!
     
     init(brain: GameBrain, isWin: Binding<Bool>) {
         self.brain = brain
@@ -29,18 +32,25 @@ struct ContentView: View {
 
     var body: some View {
                 VStack {
-                    NavigationLink(destination: Leaderboard()) {
-                        UIButtonNormal(buttonText: "Leaderboard", action: {})
+                    NavigationLink(destination: Leaderboard()
+                                    .environment(\.managedObjectContext, context)) {
+                        Text("Leaderboard")
+                            .padding(5)
+                            .font(.system(size: 18))
+                            .foregroundColor(.black)
+                            .background(Color(red: 187 / 255, green: 210 / 255, blue: 240 / 255))
+                            .cornerRadius(10)
+                            .padding(.top, 10)
                     }
                     .navigationBarHidden(true)
                     VStack {
                         HStack(alignment: .center, spacing: 0){
                             VStack(alignment: .trailing) {
-                                Text("Time: ")
+//                                Text("Time: ")
                                 Text("Moves: ")
                             }
                             VStack(alignment: .leading) {
-                                Text("String(time)")
+//                                Text("time")
                                 Text(String(moves))
                             }
                         }

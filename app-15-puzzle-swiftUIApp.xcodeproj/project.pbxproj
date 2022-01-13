@@ -21,6 +21,9 @@
 		912955732790756A00956407 /* GameBrainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912955722790756A00956407 /* GameBrainDTO.swift */; };
 		912955752790970000956407 /* NestedTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912955742790970000956407 /* NestedTimer.swift */; };
 		912955772790996500956407 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912955762790996500956407 /* CustomAlert.swift */; };
+		9129557C27909F5300956407 /* LeaderboardStatistic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129557A27909F5300956407 /* LeaderboardStatistic+CoreDataClass.swift */; };
+		9129557D27909F5300956407 /* LeaderboardStatistic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129557B27909F5300956407 /* LeaderboardStatistic+CoreDataProperties.swift */; };
+		912955812790A42100956407 /* GameDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912955802790A42100956407 /* GameDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		912955722790756A00956407 /* GameBrainDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameBrainDTO.swift; path = "../../15-puzzle-ios/15-puzzle/GameBrainDTO.swift"; sourceTree = "<group>"; };
 		912955742790970000956407 /* NestedTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTimer.swift; sourceTree = "<group>"; };
 		912955762790996500956407 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		9129557A27909F5300956407 /* LeaderboardStatistic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderboardStatistic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9129557B27909F5300956407 /* LeaderboardStatistic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderboardStatistic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		912955802790A42100956407 /* GameDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 		9129557827909D3E00956407 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9129557A27909F5300956407 /* LeaderboardStatistic+CoreDataClass.swift */,
+				9129557B27909F5300956407 /* LeaderboardStatistic+CoreDataProperties.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 		9129557927909D4300956407 /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				912955802790A42100956407 /* GameDataRepository.swift */,
 			);
 			path = DAL;
 			sourceTree = "<group>";
@@ -189,12 +198,15 @@
 				912955732790756A00956407 /* GameBrainDTO.swift in Sources */,
 				912955772790996500956407 /* CustomAlert.swift in Sources */,
 				912955752790970000956407 /* NestedTimer.swift in Sources */,
+				912955812790A42100956407 /* GameDataRepository.swift in Sources */,
 				912955692790538800956407 /* GameButton.swift in Sources */,
+				9129557C27909F5300956407 /* LeaderboardStatistic+CoreDataClass.swift in Sources */,
 				912955672790538100956407 /* UIButtonNormal.swift in Sources */,
 				91295555279052FF00956407 /* ContentView.swift in Sources */,
 				91295553279052FF00956407 /* app_15_puzzle_swiftUIAppApp.swift in Sources */,
 				9129556D279054E000956407 /* ContentWrapper.swift in Sources */,
 				91295571279073D300956407 /* GameBrain.swift in Sources */,
+				9129557D27909F5300956407 /* LeaderboardStatistic+CoreDataProperties.swift in Sources */,
 				9129555F2790530000956407 /* app_15_puzzle_swiftUIApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
